@@ -59,7 +59,8 @@ export function supportsXhigh<TApi extends Api>(model: Model<TApi>): boolean {
 		model.id.includes("gpt-5.3") ||
 		model.id.includes("gpt-5.4") ||
 		model.id.includes("gpt-5.5") ||
-		model.id.includes("deepseek-v4-pro")
+		model.id.includes("deepseek-v4-pro") ||
+		model.id.includes("deepseek-v4-flash")
 	) {
 		return true;
 	}
